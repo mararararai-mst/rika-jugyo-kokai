@@ -33,11 +33,11 @@
            line-height:1.45; white-space:nowrap; }
   .where b{ font-size:11pt; color:var(--ink); }
 
-  .lead{ font-size:10.2pt; line-height:1.7; }
+  .lead{ font-size:9.9pt; line-height:1.62; }
   .lead b{ font-weight:700; border-bottom:1.6pt solid var(--ink); padding-bottom:1px; }
 
-  .flow{ display:flex; gap:5px; margin:9px 0 11px; }
-  .step{ border:1.8pt solid var(--ink); border-radius:5px; padding:6px 9px; }
+  .flow{ display:flex; gap:5px; margin:7px 0 9px; }
+  .step{ border:1.8pt solid var(--ink); border-radius:5px; padding:5px 9px; }
   .step.s1{ flex:3; } .step.s2{ flex:4; } .step.closed{ flex:3; }
   .step .n{ font-weight:700; font-size:10pt; }
   .step .t{ font-size:8.6pt; color:var(--sub); line-height:1.4; margin-top:1px; }
@@ -47,7 +47,7 @@
   table{ width:100%; border-collapse:collapse; }
   caption{ caption-side:top; text-align:left; font-weight:700; font-size:10.6pt;
             padding:0 0 3px 0; }
-  th,td{ padding:3.6px 7px; text-align:left; vertical-align:middle; }
+  th,td{ padding:2.9px 7px; text-align:left; vertical-align:middle; }
   thead th{ font-size:8.6pt; color:var(--sub); font-weight:500;
              border-bottom:1.4pt solid var(--ink); padding-bottom:3px; }
   tbody tr{ border-bottom:.7pt solid #cfcfcf; }
@@ -58,7 +58,7 @@
   .per,.cls,.no{ font-weight:700; white-space:nowrap; }
   .tm{ white-space:nowrap; font-variant-numeric:tabular-nums; font-size:9.6pt; }
   tr.done .tm{ color:var(--sub); } tr.shut .tm{ color:var(--sub); }
-  .what{ font-size:9.4pt; }
+  .what{ font-size:9.2pt; }
   tr.shut .per,tr.shut .cls,tr.shut .what{ color:var(--sub); font-weight:500; }
   tr.shut .no{ color:var(--sub); }
   .fin{ display:inline-block; margin-left:8px; font-size:8.2pt; color:var(--sub);
@@ -73,7 +73,7 @@
   col.c1{width:23mm} col.c2{width:12mm} col.ct{width:26mm}
   col.c3{width:14mm} col.c4{width:11mm} col.c5{width:auto}
 
-  footer{ margin-top:10px; border-top:1.4pt solid var(--ink); padding-top:6px;
+  footer{ margin-top:8px; border-top:1.4pt solid var(--ink); padding-top:6px;
            font-size:9.2pt; line-height:1.65; }
   .note{ font-size:8.5pt; color:var(--sub); margin-top:3px; }
 </style>
@@ -106,7 +106,7 @@
     thead th{ white-space:nowrap; font-size:11px; }
     .date,.per,.cls,.no{ font-size:14px; }
     .tm{ font-size:12.5px; }
-    .x,.fin{ margin-left:4px; }
+    .fin{ margin-left:4px; }
     .dl{ width:100%; }
   }
   @media print{ .dl{ display:none; } }
@@ -125,18 +125,19 @@
   </header>
 
   <p class="lead">
-    後期の最初の単元を自由進度で進めます。<b>計画づくりの1コマ目から、4コマ目まで</b>を公開します。<br>
-    どのコマも、途中の出入りは自由です。10分だけでも、ぜひのぞきに来てください。
+    8年理科で、授業を公開しております。<br>
+    1つの単元全体を子どもたちが学習の方法、課題の難易度、取り組む量などを選択しながら学習を進めていく形式です。<br>
+    <b>単元計画・導入の1コマ目から4コマ目まで</b>を公開します。ご都合のつく時間にご自由にお越しください。
   </p>
 
   <div class="flow">
     <div class="step s1"><div class="n">① 計画づくり</div><div class="t">教材の説明 → 学習計画を立てる</div></div>
     <div class="step s2"><div class="n">②③④ 自由進度</div><div class="t">立てた計画にそって、自分で決めて進める</div></div>
-    <div class="step closed"><div class="n">⑤⑥ テスト</div><div class="t">公開はしませんが参考まで</div></div>
+    <div class="step closed"><div class="n">⑤⑥ テスト</div><div class="t">小テスト・パフォーマンステスト</div></div>
   </div>
 
   <table>
-    <caption>単元のすべてのコマ（公開は12コマ／全18コマ）</caption>
+    <caption>単元のすべてのコマ（全18コマ）</caption>
     <colgroup><col class="c1"><col class="c2"><col class="ct"><col class="c3"><col class="c4"><col class="c5"></colgroup>
     <thead>
       <tr><th>日にち</th><th>何限</th><th>時刻</th><th>クラス</th><th>コマ</th><th>その時間にしていること</th></tr>
@@ -168,7 +169,7 @@
       </tr>
       <tr class="daytop shut">
         <td class="date" rowspan="3">10月9日<span class="dow"> 金</span><br><span class="kouji">B校時</span></td>
-        <td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり<span class="x">公開しません</span></td>
+        <td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td>
       </tr>
       <tr class="">
         <td class="per">2限</td><td class="tm">09:40〜10:25</td><td class="cls">8-2</td><td class="no">②</td><td class="what">自由進度</td>
@@ -181,11 +182,11 @@
         <td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-3</td><td class="no">④</td><td class="what">自由進度</td>
       </tr>
       <tr class="shut">
-        <td class="per">6限</td><td class="tm">14:40〜15:30</td><td class="cls">8-1</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」<span class="x">公開しません</span></td>
+        <td class="per">6限</td><td class="tm">14:40〜15:30</td><td class="cls">8-1</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td>
       </tr>
       <tr class="daytop shut">
         <td class="date" rowspan="2">10月14日<span class="dow"> 水</span><br><span class="kouji">A校時</span></td>
-        <td class="per">2限</td><td class="tm">09:45〜10:35</td><td class="cls">8-3</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり<span class="x">公開しません</span></td>
+        <td class="per">2限</td><td class="tm">09:45〜10:35</td><td class="cls">8-3</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td>
       </tr>
       <tr class="">
         <td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-2</td><td class="no">③</td><td class="what">自由進度</td>
@@ -196,22 +197,23 @@
       </tr>
       <tr class="daytop shut">
         <td class="date" rowspan="1">10月16日<span class="dow"> 金</span><br><span class="kouji">A校時</span></td>
-        <td class="per">3限</td><td class="tm">10:45〜11:35</td><td class="cls">8-2</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり<span class="x">公開しません</span></td>
+        <td class="per">3限</td><td class="tm">10:45〜11:35</td><td class="cls">8-2</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td>
       </tr>
       <tr class="daytop shut">
         <td class="date" rowspan="1">10月20日<span class="dow"> 火</span><br><span class="kouji">B校時</span></td>
-        <td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」<span class="x">公開しません</span></td>
+        <td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td>
       </tr>
       <tr class="daytop shut">
         <td class="date" rowspan="1">10月21日<span class="dow"> 水</span><br><span class="kouji">B校時</span></td>
-        <td class="per">3限</td><td class="tm">10:35〜11:20</td><td class="cls">8-2</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」<span class="x">公開しません</span></td>
+        <td class="per">3限</td><td class="tm">10:35〜11:20</td><td class="cls">8-2</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td>
       </tr>
     </tbody>
   </table>
 
   <footer>
-    <b>見ていただきたいのは、子どもが「次に何をするか」を自分で決める場面です。</b><br>
-    教室の後ろに学習計画シートを置いています。どの子がどんな計画を立てているか、手に取って見ていただけます。
+    どのコマも、途中の出入りは自由です。10分だけでもかまいません。<br>
+    <b>見ていただきたいのは、子どもが「次に何をするか」を自己選択する場面と、
+    その自己選択に教師がどう関わるか、です。</b>
     <div class="note">※ 10月7日（水）・9日（金）はB校時（45分授業）です。ほかの日はA校時（50分授業）です。<br>
     ※ 10月14日（水）は運動会の予行のため、時程が変わることがあります。<br>
     ※ 時間割の変更があった場合は、その都度お知らせします。</div>
