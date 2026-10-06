@@ -10,37 +10,37 @@
   *{box-sizing:border-box;margin:0;padding:0;}
   html,body{width:1080px;height:1920px;overflow:hidden;}
   body{ font-family:"Zen Maru Gothic","Yu Gothic UI",sans-serif;
-         background:#FBF8F2; color:#2A2521;
+         background:#1F4D3D; color:#FFFFFF;
          display:flex; flex-direction:column;
          padding:250px 86px 250px; }   /* 上下はストーリーUIを避ける */
 
-  .eyebrow{ font-size:30px; letter-spacing:.22em; color:#B07D3A; font-weight:700; }
+  .eyebrow{ font-size:30px; letter-spacing:.22em; color:#8FE3C4; font-weight:700; }
   h1{ font-size:76px; font-weight:700; line-height:1.3; margin-top:18px;
        letter-spacing:.01em; }
-  h1 em{ font-style:normal; background:linear-gradient(transparent 62%, #F4D9A8 62%); }
-  .unit{ font-size:34px; color:#6B5F52; margin-top:20px; font-weight:500; }
+  h1 em{ font-style:normal; background:linear-gradient(transparent 62%, #17876A 62%); }
+  .unit{ font-size:34px; color:#BCD6CC; margin-top:20px; font-weight:500; }
 
   .big{ display:flex; align-items:baseline; gap:20px; margin:40px 0 8px; }
   .big .d{ font-size:68px; font-weight:700; letter-spacing:.01em; }
-  .big .c{ font-size:34px; font-weight:700; color:#B07D3A;
-            border:3px solid #B07D3A; border-radius:999px; padding:6px 20px; }
+  .big .c{ font-size:34px; font-weight:700; color:#8FE3C4;
+            border:3px solid #8FE3C4; border-radius:999px; padding:6px 20px; }
 
   ul{ list-style:none; margin-top:26px; column-count:2; column-gap:70px; }
   li{ display:flex; align-items:baseline; gap:12px; font-size:31px;
-       padding:13px 0; border-bottom:2px solid #E7DECE; break-inside:avoid;
+       padding:13px 0; border-bottom:2px solid #39685A; break-inside:avoid;
        flex-wrap:nowrap; white-space:nowrap; padding-right:16px; }
   li b{ font-weight:700; min-width:92px; }
-  .dw{ color:#8A7C6B; font-size:25px; min-width:34px; }
+  .dw{ color:#9CBDB1; font-size:25px; min-width:34px; }
   .pd{ min-width:78px; }
   .cl{ font-weight:700; min-width:76px; }
-  .nm{ color:#B07D3A; font-weight:700; }
-  i{ font-style:normal; font-size:21px; color:#8A7C6B;
+  .nm{ color:#8FE3C4; font-weight:700; }
+  i{ font-style:normal; font-size:21px; color:#9CBDB1;
       white-space:nowrap; flex-shrink:0; }
 
   footer{ margin-top:auto; }
-  .line{ height:4px; background:#2A2521; width:120px; margin-bottom:26px; }
+  .line{ height:4px; background:#8FE3C4; width:120px; margin-bottom:26px; }
   .msg{ font-size:38px; line-height:1.65; font-weight:700; }
-  .msg span{ font-weight:500; color:#6B5F52; font-size:32px; }
+  .msg span{ font-weight:500; color:#BCD6CC; font-size:32px; }
 </style>
 </head>
 <body>
@@ -50,22 +50,21 @@
 
   <div class="big">
     <div class="d">10／5 〜 10／15</div>
-    <div class="c">全12コマ</div>
+    <div class="c">全11コマ</div>
   </div>
 
   <ul>
-      <li><b>10/5</b><span class="dw">月</span><span class="pd">3限</span><span class="cl">8-1</span><span class="nm">①</span>　<i>B校時</i></li>
       <li><b>10/7</b><span class="dw">水</span><span class="pd">1限</span><span class="cl">8-1</span><span class="nm">②</span>　<i>B校時</i></li>
       <li><b>10/7</b><span class="dw">水</span><span class="pd">2限</span><span class="cl">8-3</span><span class="nm">①</span>　<i>B校時</i></li>
       <li><b>10/7</b><span class="dw">水</span><span class="pd">3限</span><span class="cl">8-2</span><span class="nm">①</span>　<i>B校時</i></li>
       <li><b>10/7</b><span class="dw">水</span><span class="pd">4限</span><span class="cl">8-3</span><span class="nm">②</span>　<i>B校時</i></li>
       <li><b>10/7</b><span class="dw">水</span><span class="pd">6限</span><span class="cl">8-1</span><span class="nm">③</span>　<i>B校時</i></li>
-      <li><b>10/8</b><span class="dw">木</span><span class="pd">1限</span><span class="cl">8-1</span><span class="nm">④</span>　<i>B校時</i></li>
+      <li><b>10/8</b><span class="dw">木</span><span class="pd">1限</span><span class="cl">8-1</span><span class="nm">④</span>　<i>A校時</i></li>
       <li><b>10/9</b><span class="dw">金</span><span class="pd">2限</span><span class="cl">8-2</span><span class="nm">②</span>　<i>B校時</i></li>
       <li><b>10/9</b><span class="dw">金</span><span class="pd">4限</span><span class="cl">8-3</span><span class="nm">③</span>　<i>B校時</i></li>
-      <li><b>10/13</b><span class="dw">火</span><span class="pd">4限</span><span class="cl">8-3</span><span class="nm">④</span>　<i>B校時</i></li>
-      <li><b>10/14</b><span class="dw">水</span><span class="pd">4限</span><span class="cl">8-2</span><span class="nm">③</span>　<i>B校時</i></li>
-      <li><b>10/15</b><span class="dw">木</span><span class="pd">4限</span><span class="cl">8-2</span><span class="nm">④</span>　<i>B校時</i></li>
+      <li><b>10/13</b><span class="dw">火</span><span class="pd">4限</span><span class="cl">8-3</span><span class="nm">④</span>　<i>A校時</i></li>
+      <li><b>10/14</b><span class="dw">水</span><span class="pd">4限</span><span class="cl">8-2</span><span class="nm">③</span>　<i>A校時</i></li>
+      <li><b>10/15</b><span class="dw">木</span><span class="pd">4限</span><span class="cl">8-2</span><span class="nm">④</span>　<i>A校時</i></li>
   </ul>
 
   <footer>

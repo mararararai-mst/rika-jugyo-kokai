@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8">
+<title>配色比較</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#55585C; padding:26px 18px 60px;
+       font-family:"Zen Maru Gothic","Yu Gothic UI",sans-serif;}
+  .row{display:flex; gap:22px; justify-content:center; align-items:flex-start;}
+  .col{width:210mm; transform:scale(.52); transform-origin:top center;
+       margin:0 -50mm;}
+  .tag{color:#fff; text-align:center; font-size:19px; font-weight:700;
+       margin-bottom:10px; letter-spacing:.04em;}
+
+  .sheet{width:210mm; height:297mm; background:var(--bg);
+         padding:13mm 11mm; color:var(--ink);}
+  .paper{background:var(--panel); border-radius:5mm; height:100%;
+         padding:9mm 9mm 8mm;}
+
+  header{margin-bottom:5mm;}
+  .eyebrow{font-size:10.5pt; font-weight:700; color:var(--accent);
+           letter-spacing:.1em; margin-bottom:2mm;}
+  h1{font-size:23pt; font-weight:900; line-height:1.3; letter-spacing:.01em;}
+
+  .info{display:flex; flex-direction:column; gap:1.6mm;
+        background:var(--accent2); border-radius:3mm; padding:4mm 5mm;
+        margin-bottom:4mm;}
+  .info > div{display:flex; align-items:baseline; gap:4mm;}
+  .info dt{flex:0 0 11mm; font-size:9pt; font-weight:700; color:var(--accent);}
+  .info dd{font-size:11pt;}
+  .info dd b{font-weight:700;}
+
+  .lead{font-size:10.5pt; line-height:1.65; color:var(--sub); margin-bottom:5mm;}
+  .cap{font-size:11pt; font-weight:700; margin-bottom:1.5mm;}
+
+  table{width:100%; border-collapse:collapse;}
+  thead th{font-size:8.4pt; font-weight:500; color:var(--sub);
+           text-align:left; padding:0 2mm 1mm; }
+  tbody td{padding:1.5mm 2mm; font-size:9.4pt; vertical-align:middle;}
+  tbody tr{border-bottom:.5pt solid var(--soft);}
+  tbody tr.daytop{border-top:1.2pt solid var(--rule);}
+  tbody tr.done td{color:var(--sub); opacity:.55;}
+  .date b{font-size:10pt; font-weight:700; white-space:nowrap;}
+  .dw{font-size:8.6pt; color:var(--sub);}
+  .ko{display:block; font-size:7.8pt; color:var(--accent); font-weight:700;}
+  .per,.cls{font-weight:700; white-space:nowrap;}
+  .tm{white-space:nowrap; font-variant-numeric:tabular-nums;}
+  .no{font-weight:700; color:var(--accent);}
+  .fin{margin-left:2mm; font-size:7.6pt; color:var(--sub);
+       border:.6pt solid var(--sub); border-radius:2mm; padding:0 1.6mm;}
+  col.c1{width:23mm} col.c2{width:12mm} col.c3{width:24mm}
+  col.c4{width:15mm} col.c5{width:11mm} col.c6{width:auto}
+
+  footer{margin-top:4mm; font-size:9.4pt; line-height:1.6;}
+  footer b{font-weight:700;}
+  .note{font-size:8.4pt; color:var(--sub); margin-top:2mm;}
+</style></head>
+<body>
+<div class="row">
+<div class="colwrap"><div class="tag">A</div><div class="col"><div class="sheet" style="
+  --bg:#F3EBDE; --panel:#FFFFFF; --ink:#2A2420; --sub:#6B5F52;
+  --accent:#C2611F; --accent2:#F6E2CA; --rule:#2A2420; --soft:#E7DCC9;">
+  <div class="paper">
+    <header>
+      <div class="eyebrow">理科 授業公開のご案内</div>
+      <h1>8年（中2） 理科<br>「消化と吸収」</h1>
+    </header>
+
+    <dl class="info">
+      <div><dt>公開</dt><dd><b>単元計画・導入の1コマ目から4コマ目まで</b></dd></div>
+      <div><dt>期間</dt><dd>10月5日（月） 〜 10月15日（木）</dd></div>
+      <div><dt>場所</dt><dd><b>本館1F 化学室</b></dd></div>
+    </dl>
+
+    <p class="lead">1つの単元全体を、子どもが学習の方法・課題の難易度・取り組む量を
+      選びながら進めていきます。</p>
+
+    <div class="cap">単元のすべてのコマ（全18コマ）</div>
+    <table>
+      <colgroup><col class="c1"><col class="c2"><col class="c3">
+        <col class="c4"><col class="c5"><col class="c6"></colgroup>
+      <thead><tr><th>日にち</th><th>何限</th><th>時刻</th><th>クラス</th><th>コマ</th>
+        <th>その時間にしていること</th></tr></thead>
+      <tbody>
+<tr class="daytop done"><td class="date"><b>10月5日</b><span class="dw"> 月</span><span class="ko">A校時</span></td><td class="per">3限</td><td class="tm">10:45〜11:35</td><td class="cls">8-1</td><td class="no">①</td><td class="what">教材の説明 ・ 学習計画づくり<span class="fin">終了</span></td></tr>
+<tr class="daytop"><td class="date"><b>10月7日</b><span class="dw"> 水</span><span class="ko">B校時</span></td><td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">②</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">2限</td><td class="tm">09:40〜10:25</td><td class="cls">8-3</td><td class="no">①</td><td class="what">教材の説明 ・ 学習計画づくり</td></tr>
+<tr class=""><td class="date"></td><td class="per">3限</td><td class="tm">10:35〜11:20</td><td class="cls">8-2</td><td class="no">①</td><td class="what">教材の説明 ・ 学習計画づくり</td></tr>
+<tr class=""><td class="date"></td><td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">②</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">6限</td><td class="tm">14:15〜15:00</td><td class="cls">8-1</td><td class="no">③</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月8日</b><span class="dw"> 木</span><span class="ko">A校時</span></td><td class="per">1限</td><td class="tm">08:45〜09:35</td><td class="cls">8-1</td><td class="no">④</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月9日</b><span class="dw"> 金</span><span class="ko">B校時</span></td><td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td></tr>
+<tr class=""><td class="date"></td><td class="per">2限</td><td class="tm">09:40〜10:25</td><td class="cls">8-2</td><td class="no">②</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">③</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月13日</b><span class="dw"> 火</span><span class="ko">A校時</span></td><td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-3</td><td class="no">④</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">6限</td><td class="tm">14:40〜15:30</td><td class="cls">8-1</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td></tr>
+<tr class="daytop"><td class="date"><b>10月14日</b><span class="dw"> 水</span><span class="ko">A校時</span></td><td class="per">2限</td><td class="tm">09:45〜10:35</td><td class="cls">8-3</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td></tr>
+<tr class=""><td class="date"></td><td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-2</td><td class="no">③</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月15日</b><span class="dw"> 木</span><span class="ko">A校時</span></td><td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-2</td><td class="no">④</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月16日</b><span class="dw"> 金</span><span class="ko">A校時</span></td><td class="per">3限</td><td class="tm">10:45〜11:35</td><td class="cls">8-2</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td></tr>
+<tr class="daytop"><td class="date"><b>10月20日</b><span class="dw"> 火</span><span class="ko">B校時</span></td><td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td></tr>
+<tr class="daytop"><td class="date"><b>10月21日</b><span class="dw"> 水</span><span class="ko">B校時</span></td><td class="per">3限</td><td class="tm">10:35〜11:20</td><td class="cls">8-2</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td></tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <b>見ていただきたいのは、子どもが「次に何をするか」を自己選択する場面と、
+      その自己選択に教師がどう関わるか、です。</b><br>
+      出入りは自由です。10分だけでもかまいません。
+      <div class="note">※ 10月7日（水）・9日（金）はB校時（45分授業）です。
+        ほかの日はA校時（50分授業）です。</div>
+    </footer>
+  </div>
+</div></div></div>
+<div class="colwrap"><div class="tag">B</div><div class="col"><div class="sheet" style="
+  --bg:#1F4D3D; --panel:#FFFFFF; --ink:#16241F; --sub:#5C6B64;
+  --accent:#17876A; --accent2:#D8EFE5; --rule:#16241F; --soft:#DCE8E3;">
+  <div class="paper">
+    <header>
+      <div class="eyebrow">理科 授業公開のご案内</div>
+      <h1>8年（中2） 理科<br>「消化と吸収」</h1>
+    </header>
+
+    <dl class="info">
+      <div><dt>公開</dt><dd><b>単元計画・導入の1コマ目から4コマ目まで</b></dd></div>
+      <div><dt>期間</dt><dd>10月5日（月） 〜 10月15日（木）</dd></div>
+      <div><dt>場所</dt><dd><b>本館1F 化学室</b></dd></div>
+    </dl>
+
+    <p class="lead">1つの単元全体を、子どもが学習の方法・課題の難易度・取り組む量を
+      選びながら進めていきます。</p>
+
+    <div class="cap">単元のすべてのコマ（全18コマ）</div>
+    <table>
+      <colgroup><col class="c1"><col class="c2"><col class="c3">
+        <col class="c4"><col class="c5"><col class="c6"></colgroup>
+      <thead><tr><th>日にち</th><th>何限</th><th>時刻</th><th>クラス</th><th>コマ</th>
+        <th>その時間にしていること</th></tr></thead>
+      <tbody>
+<tr class="daytop done"><td class="date"><b>10月5日</b><span class="dw"> 月</span><span class="ko">A校時</span></td><td class="per">3限</td><td class="tm">10:45〜11:35</td><td class="cls">8-1</td><td class="no">①</td><td class="what">教材の説明 ・ 学習計画づくり<span class="fin">終了</span></td></tr>
+<tr class="daytop"><td class="date"><b>10月7日</b><span class="dw"> 水</span><span class="ko">B校時</span></td><td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">②</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">2限</td><td class="tm">09:40〜10:25</td><td class="cls">8-3</td><td class="no">①</td><td class="what">教材の説明 ・ 学習計画づくり</td></tr>
+<tr class=""><td class="date"></td><td class="per">3限</td><td class="tm">10:35〜11:20</td><td class="cls">8-2</td><td class="no">①</td><td class="what">教材の説明 ・ 学習計画づくり</td></tr>
+<tr class=""><td class="date"></td><td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">②</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">6限</td><td class="tm">14:15〜15:00</td><td class="cls">8-1</td><td class="no">③</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月8日</b><span class="dw"> 木</span><span class="ko">A校時</span></td><td class="per">1限</td><td class="tm">08:45〜09:35</td><td class="cls">8-1</td><td class="no">④</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月9日</b><span class="dw"> 金</span><span class="ko">B校時</span></td><td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td></tr>
+<tr class=""><td class="date"></td><td class="per">2限</td><td class="tm">09:40〜10:25</td><td class="cls">8-2</td><td class="no">②</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">③</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月13日</b><span class="dw"> 火</span><span class="ko">A校時</span></td><td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-3</td><td class="no">④</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">6限</td><td class="tm">14:40〜15:30</td><td class="cls">8-1</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td></tr>
+<tr class="daytop"><td class="date"><b>10月14日</b><span class="dw"> 水</span><span class="ko">A校時</span></td><td class="per">2限</td><td class="tm">09:45〜10:35</td><td class="cls">8-3</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td></tr>
+<tr class=""><td class="date"></td><td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-2</td><td class="no">③</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月15日</b><span class="dw"> 木</span><span class="ko">A校時</span></td><td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-2</td><td class="no">④</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月16日</b><span class="dw"> 金</span><span class="ko">A校時</span></td><td class="per">3限</td><td class="tm">10:45〜11:35</td><td class="cls">8-2</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td></tr>
+<tr class="daytop"><td class="date"><b>10月20日</b><span class="dw"> 火</span><span class="ko">B校時</span></td><td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td></tr>
+<tr class="daytop"><td class="date"><b>10月21日</b><span class="dw"> 水</span><span class="ko">B校時</span></td><td class="per">3限</td><td class="tm">10:35〜11:20</td><td class="cls">8-2</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td></tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <b>見ていただきたいのは、子どもが「次に何をするか」を自己選択する場面と、
+      その自己選択に教師がどう関わるか、です。</b><br>
+      出入りは自由です。10分だけでもかまいません。
+      <div class="note">※ 10月7日（水）・9日（金）はB校時（45分授業）です。
+        ほかの日はA校時（50分授業）です。</div>
+    </footer>
+  </div>
+</div></div></div>
+<div class="colwrap"><div class="tag">C</div><div class="col"><div class="sheet" style="
+  --bg:#E7EEF7; --panel:#FFFFFF; --ink:#1A2432; --sub:#5A6778;
+  --accent:#2F6DB5; --accent2:#DCE8F7; --rule:#1A2432; --soft:#DEE6F0;">
+  <div class="paper">
+    <header>
+      <div class="eyebrow">理科 授業公開のご案内</div>
+      <h1>8年（中2） 理科<br>「消化と吸収」</h1>
+    </header>
+
+    <dl class="info">
+      <div><dt>公開</dt><dd><b>単元計画・導入の1コマ目から4コマ目まで</b></dd></div>
+      <div><dt>期間</dt><dd>10月5日（月） 〜 10月15日（木）</dd></div>
+      <div><dt>場所</dt><dd><b>本館1F 化学室</b></dd></div>
+    </dl>
+
+    <p class="lead">1つの単元全体を、子どもが学習の方法・課題の難易度・取り組む量を
+      選びながら進めていきます。</p>
+
+    <div class="cap">単元のすべてのコマ（全18コマ）</div>
+    <table>
+      <colgroup><col class="c1"><col class="c2"><col class="c3">
+        <col class="c4"><col class="c5"><col class="c6"></colgroup>
+      <thead><tr><th>日にち</th><th>何限</th><th>時刻</th><th>クラス</th><th>コマ</th>
+        <th>その時間にしていること</th></tr></thead>
+      <tbody>
+<tr class="daytop done"><td class="date"><b>10月5日</b><span class="dw"> 月</span><span class="ko">A校時</span></td><td class="per">3限</td><td class="tm">10:45〜11:35</td><td class="cls">8-1</td><td class="no">①</td><td class="what">教材の説明 ・ 学習計画づくり<span class="fin">終了</span></td></tr>
+<tr class="daytop"><td class="date"><b>10月7日</b><span class="dw"> 水</span><span class="ko">B校時</span></td><td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">②</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">2限</td><td class="tm">09:40〜10:25</td><td class="cls">8-3</td><td class="no">①</td><td class="what">教材の説明 ・ 学習計画づくり</td></tr>
+<tr class=""><td class="date"></td><td class="per">3限</td><td class="tm">10:35〜11:20</td><td class="cls">8-2</td><td class="no">①</td><td class="what">教材の説明 ・ 学習計画づくり</td></tr>
+<tr class=""><td class="date"></td><td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">②</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">6限</td><td class="tm">14:15〜15:00</td><td class="cls">8-1</td><td class="no">③</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月8日</b><span class="dw"> 木</span><span class="ko">A校時</span></td><td class="per">1限</td><td class="tm">08:45〜09:35</td><td class="cls">8-1</td><td class="no">④</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月9日</b><span class="dw"> 金</span><span class="ko">B校時</span></td><td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td></tr>
+<tr class=""><td class="date"></td><td class="per">2限</td><td class="tm">09:40〜10:25</td><td class="cls">8-2</td><td class="no">②</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">③</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月13日</b><span class="dw"> 火</span><span class="ko">A校時</span></td><td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-3</td><td class="no">④</td><td class="what">自由進度</td></tr>
+<tr class=""><td class="date"></td><td class="per">6限</td><td class="tm">14:40〜15:30</td><td class="cls">8-1</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td></tr>
+<tr class="daytop"><td class="date"><b>10月14日</b><span class="dw"> 水</span><span class="ko">A校時</span></td><td class="per">2限</td><td class="tm">09:45〜10:35</td><td class="cls">8-3</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td></tr>
+<tr class=""><td class="date"></td><td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-2</td><td class="no">③</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月15日</b><span class="dw"> 木</span><span class="ko">A校時</span></td><td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-2</td><td class="no">④</td><td class="what">自由進度</td></tr>
+<tr class="daytop"><td class="date"><b>10月16日</b><span class="dw"> 金</span><span class="ko">A校時</span></td><td class="per">3限</td><td class="tm">10:45〜11:35</td><td class="cls">8-2</td><td class="no">⑤</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td></tr>
+<tr class="daytop"><td class="date"><b>10月20日</b><span class="dw"> 火</span><span class="ko">B校時</span></td><td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td></tr>
+<tr class="daytop"><td class="date"><b>10月21日</b><span class="dw"> 水</span><span class="ko">B校時</span></td><td class="per">3限</td><td class="tm">10:35〜11:20</td><td class="cls">8-2</td><td class="no">⑥</td><td class="what">パフォーマンステスト「カレーのゆくえ」</td></tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <b>見ていただきたいのは、子どもが「次に何をするか」を自己選択する場面と、
+      その自己選択に教師がどう関わるか、です。</b><br>
+      出入りは自由です。10分だけでもかまいません。
+      <div class="note">※ 10月7日（水）・9日（金）はB校時（45分授業）です。
+        ほかの日はA校時（50分授業）です。</div>
+    </footer>
+  </div>
+</div></div></div>
+</div>
+</body></html>
