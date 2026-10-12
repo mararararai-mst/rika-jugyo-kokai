@@ -18,6 +18,13 @@
   :root{ --bg:#1F4D3D; --panel:#FFFFFF; --ink:#16241F; --sub:#5C6B64;
           --accent:#17876A; --accent2:#D8EFE5; --rule:#16241F; --soft:#DCE8E3; }
   *{box-sizing:border-box;margin:0;padding:0;}
+  .bell{ display:flex; gap:4px; margin-top:4px; }
+  .bell > div{ flex:1; border:1pt solid var(--ink); border-radius:4px; padding:2px 7px 3px; }
+  .bell .bt{ font-size:8pt; font-weight:700; margin-bottom:0; line-height:1.25; }
+  .bell table{ width:100%; border-collapse:collapse; font-size:7.6pt; color:var(--sub); line-height:1.3; }
+  .bell th{ font-weight:700; text-align:left; padding:0 3px 0 0; white-space:nowrap; color:var(--ink); }
+  .bell td{ padding:0 6px 0 0; white-space:nowrap; font-variant-numeric:tabular-nums; }
+
   body{ background:var(--bg); color:var(--ink);
          font-family:"Zen Maru Gothic","Yu Gothic UI","Meiryo",sans-serif; }
   .sheet{ width:210mm; height:297mm; margin:0 auto; padding:10mm 9mm;
@@ -36,13 +43,13 @@
   .info dt{ flex:0 0 11mm; font-size:9pt; font-weight:700; color:var(--accent); }
   .info dd{ font-size:11pt; }
 
-  .lead{ font-size:10pt; line-height:1.6; color:var(--sub); margin-bottom:3.6mm; }
+  .lead{ font-size:10pt; line-height:1.55; color:var(--sub); margin-bottom:2.6mm; }
   .cap{ font-size:11pt; font-weight:700; margin-bottom:1.5mm; }
 
   table{ width:100%; border-collapse:collapse; }
   thead th{ font-size:8.4pt; font-weight:500; color:var(--sub);
              text-align:left; padding:0 2mm 1mm; }
-  tbody td{ padding:1.05mm 2mm; font-size:9.2pt; vertical-align:middle; }
+  tbody td{ padding:0.72mm 2mm; font-size:9.2pt; vertical-align:middle; }
   tbody tr{ border-bottom:.5pt solid var(--soft); }
   tbody tr.daytop{ border-top:1.2pt solid var(--rule); }
   tbody tr.done td{ color:var(--sub); opacity:.55; }
@@ -57,8 +64,8 @@
   col.c1{width:23mm} col.c2{width:12mm} col.c3{width:24mm}
   col.c4{width:15mm} col.c5{width:11mm} col.c6{width:auto}
 
-  footer{ margin-top:3.4mm; font-size:9.2pt; line-height:1.55; }
-  .note{ font-size:8.4pt; color:var(--sub); margin-top:2mm; }
+  footer{ margin-top:2.2mm; font-size:9.2pt; line-height:1.5; }
+  .note{ font-size:8.2pt; color:var(--sub); margin-top:1.4mm; line-height:1.45; }
 
   .dl{ width:210mm; max-width:100%; margin:0 auto 10mm; padding:0 11mm;
         display:flex; gap:3mm; flex-wrap:wrap; }
@@ -131,6 +138,16 @@
       <b>見ていただきたいのは、子どもが「次に何をするか」を自己選択する場面と、
       その自己選択に教師がどう関わるか、です。</b><br>
       出入りは自由です。10分だけでもかまいません。
+    <div class="bell">
+      <div><div class="bt">A校時（50分授業）</div><table>
+        <tr><th>1限</th><td>08:45〜09:35</td><th>2限</th><td>09:45〜10:35</td><th>3限</th><td>10:45〜11:35</td></tr>
+        <tr><th>4限</th><td>11:45〜12:35</td><th>5限</th><td>13:40〜14:30</td><th>6限</th><td>14:40〜15:30</td></tr>
+      </table></div>
+      <div><div class="bt">B校時（45分授業）</div><table>
+        <tr><th>1限</th><td>08:45〜09:30</td><th>2限</th><td>09:40〜10:25</td><th>3限</th><td>10:35〜11:20</td></tr>
+        <tr><th>4限</th><td>11:30〜12:15</td><th>5限</th><td>13:20〜14:05</td><th>6限</th><td>14:15〜15:00</td></tr>
+      </table></div>
+    </div>
       <div class="note">※ 10月7日（水）・9日（金）・20日（火）・21日（水）はB校時（45分授業）です。
         ほかの日はA校時（50分授業）です。</div>
     </footer>
