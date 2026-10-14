@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>勝手に公開研</title>
+<meta property="og:title" content="勝手に公開研（血液の循環と呼吸・排出）">
+<meta property="og:description" content="中２理科「血液の循環と呼吸・排出」。単元の最初から、自由進度の4コマ目までを公開します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 portrait; margin: 10mm 12mm; }
+  :root{ --ink:#111; --sub:#444; --thin:#8a8a8a; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  .bell{ display:flex; gap:4px; margin-top:4px; }
+  .bell > div{ flex:1; border:1pt solid var(--ink); border-radius:4px; padding:2px 7px 3px; }
+  .bell .bt{ font-size:8pt; font-weight:700; margin-bottom:0; line-height:1.25; }
+  .bell table{ width:100%; border-collapse:collapse; font-size:7.6pt; color:var(--sub); line-height:1.3; }
+  .bell th{ font-weight:700; text-align:left; padding:0 3px 0 0; white-space:nowrap; color:var(--ink); }
+  .bell td{ padding:0 6px 0 0; white-space:nowrap; font-variant-numeric:tabular-nums; }
+
+  body{ font-family:"Zen Maru Gothic","Yu Gothic UI","Meiryo",sans-serif;
+         color:var(--ink); background:#fff; line-height:1.55; font-size:10.3pt;
+         -webkit-font-smoothing:antialiased; }
+  .sheet{ width:186mm; margin:0 auto; }
+
+  header{ display:flex; gap:9px; align-items:center;
+           border-bottom:2.2pt solid var(--ink); padding-bottom:6px; margin-bottom:9px; }
+  .bar{ width:5.5px; height:1.05em; background:var(--ink); border-radius:1px; }
+  h1{ font-size:19pt; font-weight:700; line-height:1.2; }
+  .sub2{ font-size:10pt; color:var(--sub); margin-top:2px; }
+  .sub{ font-size:10.2pt; font-weight:500; color:var(--sub); margin-top:2px; }
+  .nw{ white-space:nowrap; }
+  .info{ display:grid; grid-template-columns:1fr 1fr; gap:2px 26px;
+          border:1.4pt solid var(--ink); border-radius:6px;
+          padding:7px 14px; margin-bottom:7px; }
+  .info > div{ display:flex; align-items:baseline; gap:10px; }
+  .info dt{ flex:0 0 3.6em; font-size:8.8pt; color:var(--sub); font-weight:500;
+             border-right:1pt solid var(--thin); }
+  .info dd{ margin:0; font-size:10.4pt; }
+  .info dd b{ font-weight:700; }
+
+  .lead{ font-size:10pt; line-height:1.6; }
+  .lead b{ font-weight:700; border-bottom:1.6pt solid var(--ink); padding-bottom:1px; }
+
+  .flow{ display:flex; gap:5px; margin:7px 0 9px; }
+  .step{ border:1.8pt solid var(--ink); border-radius:5px; padding:5px 9px; }
+  .step.s1{ flex:3; } .step.s2{ flex:4; } .step.closed{ flex:3; }
+  .step .n{ font-weight:700; font-size:10pt; }
+  .step .t{ font-size:8.6pt; color:var(--sub); line-height:1.4; margin-top:1px; }
+  .step.closed{ border:1pt dashed var(--thin); }
+  .step.closed .n{ color:var(--sub); }
+
+  table{ width:100%; border-collapse:collapse; }
+  caption{ caption-side:top; text-align:left; font-weight:700; font-size:10.6pt;
+            padding:0 0 3px 0; }
+  th,td{ padding:2.4px 7px; text-align:left; vertical-align:middle; }
+  thead th{ font-size:8.6pt; color:var(--sub); font-weight:500;
+             border-bottom:1.4pt solid var(--ink); padding-bottom:3px; }
+  tbody tr{ border-bottom:.7pt solid #cfcfcf; }
+  tbody tr.daytop{ border-top:1.6pt solid var(--ink); }
+  .date{ font-weight:700; font-size:10.2pt; white-space:nowrap; }
+  .date .dow{ font-weight:500; font-size:8.8pt; color:var(--sub); }
+  .kouji{ font-size:8.3pt; color:var(--sub); font-weight:500; }
+  .per,.cls,.no{ font-weight:700; white-space:nowrap; }
+  .tm{ white-space:nowrap; font-variant-numeric:tabular-nums; font-size:9.6pt; }
+  tr.done .tm{ color:var(--sub); } tr.shut .tm{ color:var(--sub); }
+  .what{ font-size:9.2pt; }
+  tr.shut .per,tr.shut .cls,tr.shut .what{ color:var(--sub); font-weight:500; }
+  tr.shut .no{ color:var(--sub); }
+  .fin{ display:inline-block; margin-left:8px; font-size:8.2pt; color:var(--sub);
+         border:1pt solid var(--thin); border-radius:3px; padding:0 6px;
+         white-space:nowrap; }
+  tr.done .per,tr.done .cls,tr.done .what,tr.done .no{ color:#8a8a8a; }
+  tr.done .date{ color:#8a8a8a; }
+  .x{ display:inline-block; margin-left:8px; font-size:8.2pt; color:var(--sub);
+       border:1pt dashed var(--thin); border-radius:3px; padding:0 5px;
+       white-space:nowrap; }
+
+  col.c1{width:23mm} col.c2{width:12mm} col.ct{width:26mm}
+  col.c3{width:14mm} col.c4{width:11mm} col.c5{width:auto}
+
+  footer{ margin-top:5px; border-top:1.4pt solid var(--ink); padding-top:6px;
+           font-size:9.2pt; line-height:1.65; }
+  .note{ font-size:8.2pt; color:var(--sub); margin-top:3px; line-height:1.45; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <div class="bar"></div>
+    <h1>勝手に公開研</h1>
+  </header>
+
+  <dl class="info">
+    <div><dt>単元</dt><dd><b>血液の循環と呼吸・排出</b></dd></div>
+    <div><dt>公開</dt><dd><b>単元の最初から、自由進度の4コマ目まで</b></dd></div>
+    <div><dt>期間</dt><dd>10月16日（金） 〜 10月30日（金）</dd></div>
+    <div><dt>場所</dt><dd><b>本館1F 化学室</b></dd></div>
+  </dl>
+
+  <table>
+    <caption>10月のコマ（全16コマ）</caption>
+    <colgroup><col class="c1"><col class="c2"><col class="ct"><col class="c3"><col class="c4"><col class="c5"></colgroup>
+    <thead>
+      <tr><th>日にち</th><th>何限</th><th>時刻</th><th>クラス</th><th>コマ</th><th>その時間にしていること</th></tr>
+    </thead>
+    <tbody>
+      <tr class="daytop">
+        <td class="date" rowspan="1">10月16日<span class="dow"> 金</span><br><span class="kouji">A校時</span></td>
+        <td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-1</td><td class="no">①</td><td class="what">教材の説明 ・ 単元の計画</td>
+      </tr>
+      <tr class="daytop">
+        <td class="date" rowspan="1">10月21日<span class="dow"> 水</span><br><span class="kouji">B校時</span></td>
+        <td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">②</td><td class="what">自由進度 1</td>
+      </tr>
+      <tr class="daytop">
+        <td class="date" rowspan="2">10月23日<span class="dow"> 金</span><br><span class="kouji">A校時</span></td>
+        <td class="per">1限</td><td class="tm">08:45〜09:35</td><td class="cls">8-1</td><td class="no">③</td><td class="what">自由進度 2</td>
+      </tr>
+      <tr class="">
+        <td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-3</td><td class="no">①</td><td class="what">教材の説明 ・ 単元の計画</td>
+      </tr>
+      <tr class="daytop">
+        <td class="date" rowspan="3">10月26日<span class="dow"> 月</span><br><span class="kouji">A校時</span></td>
+        <td class="per">1限</td><td class="tm">08:45〜09:35</td><td class="cls">8-1</td><td class="no">④</td><td class="what">自由進度 3</td>
+      </tr>
+      <tr class="">
+        <td class="per">2限</td><td class="tm">09:45〜10:35</td><td class="cls">8-2</td><td class="no">①</td><td class="what">教材の説明 ・ 単元の計画</td>
+      </tr>
+      <tr class="">
+        <td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-3</td><td class="no">②</td><td class="what">自由進度 1</td>
+      </tr>
+      <tr class="daytop">
+        <td class="date" rowspan="2">10月27日<span class="dow"> 火</span><br><span class="kouji">A校時</span></td>
+        <td class="per">3限</td><td class="tm">10:45〜11:35</td><td class="cls">8-3</td><td class="no">③</td><td class="what">自由進度 2</td>
+      </tr>
+      <tr class="">
+        <td class="per">5限</td><td class="tm">13:40〜14:30</td><td class="cls">8-2</td><td class="no">②</td><td class="what">自由進度 1</td>
+      </tr>
+      <tr class="daytop">
+        <td class="date" rowspan="3">10月28日<span class="dow"> 水</span><br><span class="kouji">B校時</span></td>
+        <td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">⑤</td><td class="what">自由進度 4</td>
+      </tr>
+      <tr class="">
+        <td class="per">2限</td><td class="tm">09:40〜10:25</td><td class="cls">8-3</td><td class="no">④</td><td class="what">自由進度 3</td>
+      </tr>
+      <tr class="">
+        <td class="per">3限</td><td class="tm">10:35〜11:20</td><td class="cls">8-2</td><td class="no">③</td><td class="what">自由進度 2</td>
+      </tr>
+      <tr class="daytop">
+        <td class="date" rowspan="1">10月29日<span class="dow"> 木</span><br><span class="kouji">A校時</span></td>
+        <td class="per">4限</td><td class="tm">11:45〜12:35</td><td class="cls">8-2</td><td class="no">④</td><td class="what">自由進度 3</td>
+      </tr>
+      <tr class="daytop shut">
+        <td class="date" rowspan="3">10月30日<span class="dow"> 金</span><br><span class="kouji">B校時</span></td>
+        <td class="per">1限</td><td class="tm">08:45〜09:30</td><td class="cls">8-1</td><td class="no">⑥</td><td class="what">小テスト（ノート持ち込み）・単元のふりかえり</td>
+      </tr>
+      <tr class="">
+        <td class="per">2限</td><td class="tm">09:40〜10:25</td><td class="cls">8-2</td><td class="no">⑤</td><td class="what">自由進度 4</td>
+      </tr>
+      <tr class="">
+        <td class="per">4限</td><td class="tm">11:30〜12:15</td><td class="cls">8-3</td><td class="no">⑤</td><td class="what">自由進度 4</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <b>見ていただきたいのは、子どもが「次に何をするか」を自己選択する場面と、
+    その自己選択に教師がどう関わるか、です。</b><br>
+    出入りは自由です。10分だけでもかまいません。
+    <div class="bell">
+      <div><div class="bt">A校時（50分授業）</div><table>
+        <tr><th>1限</th><td>08:45〜09:35</td><th>2限</th><td>09:45〜10:35</td><th>3限</th><td>10:45〜11:35</td></tr>
+        <tr><th>4限</th><td>11:45〜12:35</td><th>5限</th><td>13:40〜14:30</td><th>6限</th><td>14:40〜15:30</td></tr>
+      </table></div>
+      <div><div class="bt">B校時（45分授業）</div><table>
+        <tr><th>1限</th><td>08:45〜09:30</td><th>2限</th><td>09:40〜10:25</td><th>3限</th><td>10:35〜11:20</td></tr>
+        <tr><th>4限</th><td>11:30〜12:15</td><th>5限</th><td>13:20〜14:05</td><th>6限</th><td>14:15〜15:00</td></tr>
+      </table></div>
+    </div>
+    <div class="note">※ 10月21日（水）・28日（水）・30日（金）はB校時（45分授業）です。ほかの日はA校時（50分授業）です。<br>
+    ※ 10月27日（火）は研究授業のため、時程が変わることがあります。<br>
+    ※ 8-2と8-3の⑥は11月です。時間割が出てからお知らせします。8-1は10月中に終わります。<br>
+    ※ 時間割の変更があった場合は、その都度お知らせします。</div>
+  </footer>
+
+</div>
+</body>
+</html>
